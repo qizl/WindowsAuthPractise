@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32210.238
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WinFormsApp1", "WinFormsApp1\WinFormsApp1.csproj", "{5256E0D3-3507-4A90-AB58-A7844273F88F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WinFormsAppAdmin", "WinFormsAppAdmin\WinFormsAppAdmin.csproj", "{B8F5461D-CFEB-4124-9C95-28A3030B1644}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5256E0D3-3507-4A90-AB58-A7844273F88F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5256E0D3-3507-4A90-AB58-A7844273F88F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5256E0D3-3507-4A90-AB58-A7844273F88F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5256E0D3-3507-4A90-AB58-A7844273F88F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B8F5461D-CFEB-4124-9C95-28A3030B1644}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B8F5461D-CFEB-4124-9C95-28A3030B1644}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B8F5461D-CFEB-4124-9C95-28A3030B1644}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B8F5461D-CFEB-4124-9C95-28A3030B1644}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E798B92A-1045-42DB-83E3-E9B4341CE3DA}
+	EndGlobalSection
+EndGlobal
