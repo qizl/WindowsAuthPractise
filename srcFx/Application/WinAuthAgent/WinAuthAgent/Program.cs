@@ -20,7 +20,7 @@ namespace WinAuthAgent
             // 判断当前用户是否是管理员 
             if (principal.IsInRole(System.Security.Principal.WindowsBuiltInRole.Administrator))
             {
-                var adminFormsPath = Path.Combine(Environment.CurrentDirectory, $"{nameof(WinHostsHandler)}.exe");
+                var adminFormsPath = Path.Combine(Application.StartupPath, $"{nameof(WinHostsHandler)}.exe");
                 Process.Start(adminFormsPath, args.Length > 0 ? args[0] : String.Empty);
             }
             else // 用管理员用户运行 
