@@ -1,4 +1,8 @@
-﻿namespace WinOSUtils
+﻿using System;
+using System.IO;
+using System.Linq;
+
+namespace WinOSUtils
 {
     public class HostsHelper
     {

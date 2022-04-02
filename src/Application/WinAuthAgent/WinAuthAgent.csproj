@@ -9,7 +9,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\WinFormsAppAdmin\WinFormsAppAdmin.csproj" />
+    <ProjectReference Include="..\WinHostsHandler\WinHostsHandler.csproj" />
   </ItemGroup>
 
 </Project>

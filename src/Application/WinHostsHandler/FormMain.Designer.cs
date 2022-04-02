@@ -1,6 +1,6 @@
-﻿namespace WinFormsAppAdmin
+﻿namespace WinHostsHandler
 {
-    partial class Form1
+    partial class FormMain
     {
         /// <summary>
         ///  Required designer variable.
@@ -28,30 +28,31 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
+            this.lblMessage = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // label1
+            // lblMessage
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(180, 104);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(174, 35);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Admin Form";
+            this.lblMessage.AutoSize = true;
+            this.lblMessage.Location = new System.Drawing.Point(73, 49);
+            this.lblMessage.Name = "lblMessage";
+            this.lblMessage.Size = new System.Drawing.Size(300, 35);
+            this.lblMessage.TabIndex = 0;
+            this.lblMessage.Text = "正在禁用Chrome更新...";
             // 
-            // Form1
+            // FormMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(16F, 35F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(560, 247);
-            this.Controls.Add(this.label1);
+            this.ClientSize = new System.Drawing.Size(453, 135);
+            this.Controls.Add(this.lblMessage);
             this.Font = new System.Drawing.Font("Microsoft YaHei UI", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
-            this.Name = "Form1";
+            this.Name = "FormMain";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Form1";
-            this.Load += new System.EventHandler(this.Form1_Load);
+            this.Text = "禁用Chrome更新";
+            this.Load += new System.EventHandler(this.FormMain_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -59,6 +60,6 @@
 
         #endregion
 
-        private Label label1;
+        private Label lblMessage;
     }
 }

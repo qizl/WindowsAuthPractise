@@ -1,33 +1,34 @@
+ï»¿using System;
 using System.Diagnostics;
+using System.IO;
+using System.Windows.Forms;
 
-namespace WinFormsApp1
+namespace WinAuthAgent
 {
     internal static class Program
     {
         /// <summary>
-        ///  The main entry point for the application.
+        /// åº”ç”¨ç¨‹åºçš„ä¸»å…¥å£ç‚¹ã€‚
         /// </summary>
         [STAThread]
-        static void Main()
+        static void Main(string[] args)
         {
-            //»ñÈ¡µ±Ç°µÇÂ¼µÄWindowsÓÃ»§µÄ±êÊ¶ 
+            //è·å–å½“å‰ç™»å½•çš„Windowsç”¨æˆ·çš„æ ‡è¯† 
             System.Security.Principal.WindowsIdentity wid = System.Security.Principal.WindowsIdentity.GetCurrent();
             System.Security.Principal.WindowsPrincipal principal = new System.Security.Principal.WindowsPrincipal(wid);
 
-            // ÅĞ¶Ïµ±Ç°ÓÃ»§ÊÇ·ñÊÇ¹ÜÀíÔ± 
+            // åˆ¤æ–­å½“å‰ç”¨æˆ·æ˜¯å¦æ˜¯ç®¡ç†å‘˜ 
             if (principal.IsInRole(System.Security.Principal.WindowsBuiltInRole.Administrator))
             {
-                ApplicationConfiguration.Initialize();
-                //Application.Run(new Form1());
-
-                var adminFormsPath = Path.Combine(Environment.CurrentDirectory, $"{nameof(WinFormsAppAdmin)}.exe");
-                Process.Start(adminFormsPath);
+                var adminFormsPath = Path.Combine(Environment.CurrentDirectory, $"{nameof(WinHostsHandler)}.exe");
+                Process.Start(adminFormsPath, args.Length > 0 ? args[0] : String.Empty);
             }
-            else // ÓÃ¹ÜÀíÔ±ÓÃ»§ÔËĞĞ 
+            else // ç”¨ç®¡ç†å‘˜ç”¨æˆ·è¿è¡Œ 
             {
                 var startInfo = new ProcessStartInfo
                 {
                     FileName = Application.ExecutablePath,
+                    Arguments = args.Length > 0 ? args[0] : String.Empty,
                     UseShellExecute = true,
                     Verb = "runas",
                 };
